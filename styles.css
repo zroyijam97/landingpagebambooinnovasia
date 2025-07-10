@@ -4,6 +4,240 @@
     box-sizing: border-box;
 }
 
+/* NFC Cards Section */
+.nfc-cards {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.nfc-showcase {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.nfc-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.nfc-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.nfc-feature-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(22, 163, 74, 0.1);
+}
+
+.nfc-feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.feature-icon-nfc {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nfc-feature-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.nfc-feature-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.nfc-card-demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.card-3d {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.card-3d:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow-hover);
+}
+
+.card-front {
+    background: var(--gradient-green);
+    color: white;
+}
+
+.card-back {
+    background: white;
+    color: var(--text-dark);
+    transform: rotateY(180deg);
+    border: 2px solid var(--primary-green);
+}
+
+.card-logo {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-front h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.card-front p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.nfc-symbol {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.qr-placeholder {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed var(--primary-green);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+}
+
+.card-back p {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-back small {
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+.nfc-benefits {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(22, 163, 74, 0.1);
+}
+
+.nfc-benefits h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-dark);
+}
+
+.benefit-item i {
+    color: var(--primary-green);
+    font-size: 1.1rem;
+}
+
+.benefit-item span {
+    font-weight: 500;
+}
+
+.nfc-cta {
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 2rem;
+}
+
+.nfc-cta .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    padding: 15px 25px;
+}
+
+.contact-info-nfc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-info-nfc p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.contact-info-nfc i {
+    color: var(--primary-green);
+    width: 16px;
+}
+
 :root {
     --primary-green: #16a34a;
     --secondary-green: #22c55e;
@@ -103,6 +337,26 @@ body {
 
 .nav-menu a:hover::after {
     width: 100%;
+}
+
+.nav-buy-btn {
+    background: var(--gradient-green) !important;
+    color: white !important;
+    padding: 8px 16px !important;
+    border-radius: 25px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    margin-left: 1rem;
+}
+
+.nav-buy-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-hover) !important;
+    color: white !important;
+}
+
+.nav-buy-btn::after {
+    display: none !important;
 }
 
 .hamburger {
@@ -782,6 +1036,28 @@ body {
     .adopt-card {
         max-width: 280px;
         margin: 0 auto;
+    }
+    
+    .nfc-showcase {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .nfc-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .card-3d {
+        width: 280px;
+        height: 170px;
+    }
+    
+    .nav-buy-btn {
+        margin-left: 0 !important;
+        margin-top: 1rem !important;
+        display: block !important;
+        text-align: center !important;
     }
     
     .contact-content {
