@@ -381,6 +381,7 @@ body {
     background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
     position: relative;
     overflow: hidden;
+    padding-top: 70px; /* Add padding to account for fixed navbar */
 }
 
 .hero::before {
@@ -980,6 +981,42 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* Language Toggle Styles */
+.language-toggle {
+    margin-left: 20px;
+}
+
+.lang-btn {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(76, 175, 80, 0.3);
+}
+
+.lang-btn:hover {
+    background: linear-gradient(135deg, #45a049, #4CAF50);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
+
+.lang-btn i {
+    font-size: 12px;
+}
+
+#currentLang {
+    font-weight: bold;
+    font-size: 12px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
@@ -1001,6 +1038,23 @@ body {
     
     .nav-menu.active {
         left: 0;
+    }
+    
+    .language-toggle {
+        position: fixed;
+        top: 15px;
+        right: 60px;
+        margin: 0;
+        z-index: 1001;
+    }
+
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .hero {
+        padding-top: 80px; /* Increase padding for mobile to account for smaller screen */
     }
     
     .hero-content {

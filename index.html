@@ -17,15 +17,21 @@
                 <img src="logo.svg" alt="Bamboo Innovasia" class="logo-img">
             </div>
             <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#nfc-cards">NFC Cards</a></li>
-                    <li><a href="#solutions">Solutions</a></li>
-                    <li><a href="#impact">Impact</a></li>
-                    <li><a href="#adopt">Adopt</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://bambooinnovasia.orderla.my/nfc" target="_blank" class="nav-buy-btn">Buy NFC Card</a></li>
+                    <li><a href="#home" data-en="Home" data-ms="Utama">Home</a></li>
+                    <li><a href="#about" data-en="About" data-ms="Tentang">About</a></li>
+                    <li><a href="#nfc-cards" data-en="NFC Cards" data-ms="Kad NFC">NFC Cards</a></li>
+                    <li><a href="#solutions" data-en="Solutions" data-ms="Penyelesaian">Solutions</a></li>
+                    <li><a href="#impact" data-en="Impact" data-ms="Impak">Impact</a></li>
+                    <li><a href="#adopt" data-en="Adopt" data-ms="Adopsi">Adopt</a></li>
+                    <li><a href="#contact" data-en="Contact" data-ms="Hubungi">Contact</a></li>
+                    <li><a href="https://bambooinnovasia.orderla.my/nfc" target="_blank" class="nav-buy-btn" data-en="Buy NFC Card" data-ms="Beli Kad NFC">Buy NFC Card</a></li>
                 </ul>
+                <div class="language-toggle">
+                    <button id="langToggle" class="lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">EN</span>
+                    </button>
+                </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -38,11 +44,11 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1><span class="highlight">Sustainable</span> Connections, <span class="highlight">Smarter</span> Solutions</h1>
-                <p>Revolutionizing digital networking with eco-friendly Bamboo NFC Cards and smart business solutions. Reduce plastic waste while enhancing your professional connections.</p>
+                <h1 data-en="<span class='highlight'>Sustainable</span> Connections, <span class='highlight'>Smarter</span> Solutions" data-ms="Sambungan <span class='highlight'>Lestari</span>, Penyelesaian <span class='highlight'>Bijak</span>"><span class="highlight">Sustainable</span> Connections, <span class="highlight">Smarter</span> Solutions</h1>
+                <p data-en="Revolutionizing digital networking with eco-friendly Bamboo NFC Cards and smart business solutions. Reduce plastic waste while enhancing your professional connections." data-ms="Merevolusikan rangkaian digital dengan Kad NFC Bambu yang mesra alam dan penyelesaian perniagaan pintar. Kurangkan sisa plastik sambil meningkatkan sambungan profesional anda.">Revolutionizing digital networking with eco-friendly Bamboo NFC Cards and smart business solutions. Reduce plastic waste while enhancing your professional connections.</p>
                 <div class="hero-buttons">
-                    <button class="btn-primary">Explore Solutions</button>
-                    <button class="btn-secondary">Learn More</button>
+                    <a href="#nfc-cards" class="btn-primary" data-en="Explore Solutions" data-ms="Terokai Penyelesaian">Explore Solutions</a>
+                    <a href="#about" class="btn-secondary" data-en="Learn More" data-ms="Ketahui Lebih Lanjut">Learn More</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -85,40 +91,40 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about-section">
         <div class="container">
             <div class="section-header">
-                <h2>Why Bamboo NFC Cards?</h2>
-                <p>The perfect fusion of sustainability and smart technology</p>
+                <h2 data-en="Why Bamboo NFC Cards?" data-ms="Mengapa Kad NFC Bambu?">Why Bamboo NFC Cards?</h2>
+                <p data-en="The perfect fusion of sustainability and smart technology" data-ms="Gabungan sempurna kelestarian dan teknologi pintar">The perfect fusion of sustainability and smart technology</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-wifi"></i>
                     </div>
-                    <h3>NFC Technology</h3>
-                    <p>Instant contact sharing with a simple tap - no apps required, works with all smartphones</p>
+                    <h3 data-en="Instant Contact Sharing" data-ms="Perkongsian Kenalan Segera">Instant Contact Sharing</h3>
+                    <p data-en="Simply tap your NFC card to any smartphone to instantly share your contact information, social media profiles, and business details." data-ms="Hanya ketik kad NFC anda ke mana-mana telefon pintar untuk berkongsi maklumat kenalan, profil media sosial, dan butiran perniagaan anda dengan serta-merta.">Simply tap your NFC card to any smartphone to instantly share your contact information, social media profiles, and business details.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <h3>Eco-Friendly</h3>
-                    <p>Made from sustainable bamboo, reducing plastic waste and environmental impact</p>
+                    <h3 data-en="Eco-Friendly Material" data-ms="Bahan Mesra Alam">Eco-Friendly Material</h3>
+                    <p data-en="Made from sustainable bamboo, our cards are 100% biodegradable and help reduce plastic waste in the environment." data-ms="Diperbuat daripada bambu lestari, kad kami 100% boleh terurai dan membantu mengurangkan sisa plastik dalam alam sekitar.">Made from sustainable bamboo, our cards are 100% biodegradable and help reduce plastic waste in the environment.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-qrcode"></i>
                     </div>
-                    <h3>QR Code Integration</h3>
-                    <p>Dual functionality with both NFC and QR code for maximum compatibility</p>
+                    <h3 data-en="QR Code Integration" data-ms="Integrasi Kod QR">QR Code Integration</h3>
+                    <p data-en="Each card includes a custom QR code for devices without NFC capability, ensuring universal compatibility and accessibility." data-ms="Setiap kad termasuk kod QR tersuai untuk peranti tanpa keupayaan NFC, memastikan keserasian dan kebolehcapaian universal.">Each card includes a custom QR code for devices without NFC capability, ensuring universal compatibility and accessibility.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-share-alt"></i>
                     </div>
-                    <h3>Social Media Links</h3>
-                    <p>Connect all your social profiles and increase business reach effortlessly</p>
+                    <h3 data-en="Social Media Links" data-ms="Pautan Media Sosial">Social Media Links</h3>
+                    <p data-en="Connect all your social media profiles, websites, and digital portfolios in one convenient, professional card." data-ms="Sambungkan semua profil media sosial, laman web, dan portfolio digital anda dalam satu kad profesional yang mudah.">Connect all your social media profiles, websites, and digital portfolios in one convenient, professional card.</p>
                 </div>
             </div>
         </div>
@@ -128,8 +134,8 @@
     <section id="nfc-cards" class="nfc-cards">
         <div class="container">
             <div class="section-header">
-                <h2>NFC Card - Digital Card</h2>
-                <p>Revolusi cara anda berkongsi maklumat dengan kad NFC bambu yang mesra alam dan berteknologi tinggi</p>
+                <h2 data-en="NFC Card - Digital Card" data-ms="Kad NFC - Kad Digital">NFC Card - Digital Card</h2>
+                <p data-en="Revolutionize how you share information with eco-friendly bamboo NFC cards featuring cutting-edge technology" data-ms="Revolusi cara anda berkongsi maklumat dengan kad NFC bambu yang mesra alam dan berteknologi tinggi">Revolutionize how you share information with eco-friendly bamboo NFC cards featuring cutting-edge technology</p>
             </div>
             
             <div class="nfc-showcase">
@@ -139,32 +145,32 @@
                             <div class="feature-icon-nfc">
                                 <i class="fas fa-wifi"></i>
                             </div>
-                            <h3>Teknologi NFC</h3>
-                            <p>Sentuh sahaja untuk berkongsi maklumat kontak, profil sosial, dan portfolio secara instant</p>
+                            <h3 data-en="NFC Technology" data-ms="Teknologi NFC">NFC Technology</h3>
+                            <p data-en="Simply tap to instantly share contact information, social profiles, and portfolios" data-ms="Sentuh sahaja untuk berkongsi maklumat kontak, profil sosial, dan portfolio secara instant">Simply tap to instantly share contact information, social profiles, and portfolios</p>
                         </div>
                         
                         <div class="nfc-feature-item">
                             <div class="feature-icon-nfc">
                                 <i class="fas fa-leaf"></i>
                             </div>
-                            <h3>100% Mesra Alam</h3>
-                            <p>Diperbuat daripada bambu asli yang boleh terurai secara semula jadi, menggantikan kad plastik</p>
+                            <h3 data-en="100% Eco-Friendly" data-ms="100% Mesra Alam">100% Eco-Friendly</h3>
+                            <p data-en="Made from authentic bamboo that naturally biodegrades, replacing plastic cards" data-ms="Diperbuat daripada bambu asli yang boleh terurai secara semula jadi, menggantikan kad plastik">Made from authentic bamboo that naturally biodegrades, replacing plastic cards</p>
                         </div>
                         
                         <div class="nfc-feature-item">
                             <div class="feature-icon-nfc">
                                 <i class="fas fa-qrcode"></i>
                             </div>
-                            <h3>QR Code Integration</h3>
-                            <p>Dilengkapi dengan QR code sebagai alternatif untuk peranti yang tidak menyokong NFC</p>
+                            <h3 data-en="QR Code Integration" data-ms="Integrasi Kod QR">QR Code Integration</h3>
+                            <p data-en="Equipped with QR code as an alternative for devices that don't support NFC" data-ms="Dilengkapi dengan QR code sebagai alternatif untuk peranti yang tidak menyokong NFC">Equipped with QR code as an alternative for devices that don't support NFC</p>
                         </div>
                         
                         <div class="nfc-feature-item">
                             <div class="feature-icon-nfc">
                                 <i class="fas fa-edit"></i>
                             </div>
-                            <h3>Boleh Dikustomisasi</h3>
-                            <p>Reka bentuk kad mengikut keperluan dengan logo, warna, dan maklumat syarikat anda</p>
+                            <h3 data-en="Fully Customizable" data-ms="Boleh Dikustomisasi">Fully Customizable</h3>
+                            <p data-en="Design cards according to your needs with your logo, colors, and company information" data-ms="Reka bentuk kad mengikut keperluan dengan logo, warna, dan maklumat syarikat anda">Design cards according to your needs with your logo, colors, and company information</p>
                         </div>
                     </div>
                     
@@ -173,7 +179,7 @@
                             <div class="card-front">
                                 <div class="card-logo">🎋</div>
                                 <h3>Bambooinnovasia</h3>
-                                <p>Digital Business Card</p>
+                                <p data-en="Digital Business Card" data-ms="Kad Perniagaan Digital">Digital Business Card</p>
                                 <div class="nfc-symbol">
                                     <i class="fas fa-wifi"></i>
                                     <span>NFC</span>
@@ -183,7 +189,7 @@
                                 <div class="qr-placeholder">
                                     <i class="fas fa-qrcode"></i>
                                 </div>
-                                <p>Scan QR Code</p>
+                                <p data-en="Scan QR Code" data-ms="Imbas Kod QR">Scan QR Code</p>
                                 <small>hihello.com activation</small>
                             </div>
                         </div>
@@ -191,37 +197,37 @@
                 </div>
                 
                 <div class="nfc-benefits">
-                    <h3>Mengapa Pilih Kad NFC Bambu?</h3>
+                    <h3 data-en="Why Choose Bamboo NFC Cards?" data-ms="Mengapa Pilih Kad NFC Bambu?">Why Choose Bamboo NFC Cards?</h3>
                     <div class="benefits-list">
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Mengurangkan jejak karbon dengan 95%</span>
+                            <span data-en="Reduces carbon footprint by 95%" data-ms="Mengurangkan jejak karbon dengan 95%">Reduces carbon footprint by 95%</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Aktivasi mudah melalui hihello.com</span>
+                            <span data-en="Easy activation through hihello.com" data-ms="Aktivasi mudah melalui hihello.com">Easy activation through hihello.com</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Tahan lama dan kualiti premium</span>
+                            <span data-en="Durable and premium quality" data-ms="Tahan lama dan kualiti premium">Durable and premium quality</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Sokongan teknikal 24/7</span>
+                            <span data-en="24/7 technical support" data-ms="Sokongan teknikal 24/7">24/7 technical support</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Dropship program tersedia</span>
+                            <span data-en="Dropship program available" data-ms="Program dropship tersedia">Dropship program available</span>
                         </div>
                     </div>
                     
                     <div class="nfc-cta">
                         <a href="https://bambooinnovasia.orderla.my/nfc" target="_blank" class="btn-primary">
                             <i class="fas fa-shopping-cart"></i>
-                            Beli Kad NFC Sekarang
+                            <span data-en="Buy NFC Card Now" data-ms="Beli Kad NFC Sekarang">Buy NFC Card Now</span>
                         </a>
                         <div class="contact-info-nfc">
-                            <p><i class="fas fa-phone"></i> Hotline: +60197537296</p>
+                            <p><i class="fas fa-phone"></i> <span data-en="Hotline: +60197537296" data-ms="Hotline: +60197537296">Hotline: +60197537296</span></p>
                             <p><i class="fas fa-envelope"></i> info@bambooinnovasia.com</p>
                         </div>
                     </div>
@@ -234,47 +240,47 @@
     <section id="solutions" class="solutions">
         <div class="container">
             <div class="section-header">
-                <h2>Our Digital Solutions</h2>
-                <p>Smart bamboo NFC cards for every professional need</p>
+                <h2 data-en="Our Digital Solutions" data-ms="Penyelesaian Digital Kami">Our Digital Solutions</h2>
+                <p data-en="Smart bamboo NFC cards for every professional need" data-ms="Kad NFC bambu pintar untuk setiap keperluan profesional">Smart bamboo NFC cards for every professional need</p>
             </div>
             <div class="solutions-grid">
                 <div class="solution-card">
                     <div class="solution-image">
                         <i class="fas fa-id-card"></i>
                     </div>
-                    <h3>Business & E-Profile Cards</h3>
-                    <p>Smart digital business cards that instantly share your contact information and social profiles.</p>
+                    <h3 data-en="Business & E-Profile Cards" data-ms="Kad Perniagaan & E-Profil">Business & E-Profile Cards</h3>
+                    <p data-en="Smart digital business cards that instantly share your contact information and social profiles." data-ms="Kad perniagaan digital pintar yang berkongsi maklumat kenalan dan profil sosial anda dengan serta-merta.">Smart digital business cards that instantly share your contact information and social profiles.</p>
                     <ul>
-                        <li>NFC-enabled contact sharing</li>
-                        <li>QR code integration</li>
-                        <li>Social media links</li>
-                        <li>vCard templates</li>
+                        <li data-en="NFC-enabled contact sharing" data-ms="Perkongsian kenalan berkemampuan NFC">NFC-enabled contact sharing</li>
+                        <li data-en="QR code integration" data-ms="Integrasi kod QR">QR code integration</li>
+                        <li data-en="Social media links" data-ms="Pautan media sosial">Social media links</li>
+                        <li data-en="vCard templates" data-ms="Templat vCard">vCard templates</li>
                     </ul>
                 </div>
                 <div class="solution-card">
                     <div class="solution-image">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>Campus & Event Solutions</h3>
-                    <p>Smart cards for educational institutions, events, and corporate access control.</p>
+                    <h3 data-en="Campus & Event Solutions" data-ms="Penyelesaian Kampus & Acara">Campus & Event Solutions</h3>
+                    <p data-en="Smart cards for educational institutions, events, and corporate access control." data-ms="Kad pintar untuk institusi pendidikan, acara, dan kawalan akses korporat.">Smart cards for educational institutions, events, and corporate access control.</p>
                     <ul>
-                        <li>Student ID cards</li>
-                        <li>Event passes & lanyards</li>
-                        <li>Door access cards</li>
-                        <li>Conference networking</li>
+                        <li data-en="Student ID cards" data-ms="Kad ID pelajar">Student ID cards</li>
+                        <li data-en="Event passes & lanyards" data-ms="Pas acara & lanyard">Event passes & lanyards</li>
+                        <li data-en="Door access cards" data-ms="Kad akses pintu">Door access cards</li>
+                        <li data-en="Conference networking" data-ms="Rangkaian persidangan">Conference networking</li>
                     </ul>
                 </div>
                 <div class="solution-card">
                     <div class="solution-image">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3>Membership & Loyalty</h3>
-                    <p>Enhance customer engagement with smart membership and loyalty card solutions.</p>
+                    <h3 data-en="Membership & Loyalty" data-ms="Keahlian & Kesetiaan">Membership & Loyalty</h3>
+                    <p data-en="Enhance customer engagement with smart membership and loyalty card solutions." data-ms="Tingkatkan penglibatan pelanggan dengan penyelesaian kad keahlian dan kesetiaan yang pintar.">Enhance customer engagement with smart membership and loyalty card solutions.</p>
                     <ul>
-                        <li>Membership cards</li>
-                        <li>Loyalty programs</li>
-                        <li>Hotel key cards</li>
-                        <li>Corporate gifting</li>
+                        <li data-en="Membership cards" data-ms="Kad keahlian">Membership cards</li>
+                        <li data-en="Loyalty programs" data-ms="Program kesetiaan">Loyalty programs</li>
+                        <li data-en="Hotel key cards" data-ms="Kad kunci hotel">Hotel key cards</li>
+                        <li data-en="Corporate gifting" data-ms="Pemberian korporat">Corporate gifting</li>
                     </ul>
                 </div>
             </div>
@@ -285,25 +291,25 @@
     <section id="impact" class="impact">
         <div class="container">
             <div class="section-header">
-                <h2>Our Digital Impact</h2>
-                <p>Transforming networking while protecting the environment</p>
+                <h2 data-en="Our Digital Impact" data-ms="Impak Digital Kami">Our Digital Impact</h2>
+                <p data-en="Transforming networking while protecting the environment" data-ms="Mengubah rangkaian sambil melindungi alam sekitar">Transforming networking while protecting the environment</p>
             </div>
             <div class="impact-stats">
                 <div class="stat-card">
                     <div class="stat-number">50K+</div>
-                    <div class="stat-label">NFC Cards Distributed</div>
+                    <div class="stat-label" data-en="NFC Cards Distributed" data-ms="Kad NFC Diedarkan">NFC Cards Distributed</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">1M+</div>
-                    <div class="stat-label">Digital Connections Made</div>
+                    <div class="stat-label" data-en="Digital Connections Made" data-ms="Sambungan Digital Dibuat">Digital Connections Made</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">25+</div>
-                    <div class="stat-label">vCard Templates</div>
+                    <div class="stat-label" data-en="vCard Templates" data-ms="Templat vCard">vCard Templates</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">100%</div>
-                    <div class="stat-label">Plastic-Free Solution</div>
+                    <div class="stat-label" data-en="Plastic-Free Solution" data-ms="Penyelesaian Bebas Plastik">Plastic-Free Solution</div>
                 </div>
             </div>
         </div>
@@ -314,47 +320,47 @@
         <div class="container">
             <div class="adopt-content">
                 <div class="adopt-text">
-                    <h2>Adopt a Bambooinnovasia</h2>
-                    <p>Join our green initiative that connects individuals and corporations with environmental action through symbolic bamboo adoption.</p>
+                    <h2 data-en="Adopt a Bambooinnovasia" data-ms="Adopsi Bambooinnovasia">Adopt a Bambooinnovasia</h2>
+                    <p data-en="Join our green initiative that connects individuals and corporations with environmental action through symbolic bamboo adoption." data-ms="Sertai inisiatif hijau kami yang menghubungkan individu dan korporat dengan tindakan alam sekitar melalui adopsi bambu simbolik.">Join our green initiative that connects individuals and corporations with environmental action through symbolic bamboo adoption.</p>
                     <div class="adopt-features">
                         <div class="adopt-feature">
                             <i class="fas fa-certificate"></i>
-                            <span>Digital Certificate</span>
+                            <span data-en="Digital Certificate" data-ms="Sijil Digital">Digital Certificate</span>
                         </div>
                         <div class="adopt-feature">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>GPS Location Tracking</span>
+                            <span data-en="GPS Location Tracking" data-ms="Penjejakan Lokasi GPS">GPS Location Tracking</span>
                         </div>
                         <div class="adopt-feature">
                             <i class="fas fa-chart-line"></i>
-                            <span>Growth Status Updates</span>
+                            <span data-en="Growth Status Updates" data-ms="Kemas Kini Status Pertumbuhan">Growth Status Updates</span>
                         </div>
                         <div class="adopt-feature">
                             <i class="fas fa-leaf"></i>
-                            <span>CO₂ Carbon Offset Data</span>
+                            <span data-en="CO₂ Carbon Offset Data" data-ms="Data Offset Karbon CO₂">CO₂ Carbon Offset Data</span>
                         </div>
                         <div class="adopt-feature">
                             <i class="fas fa-globe"></i>
-                            <span>ESG/SDG Reporting</span>
+                            <span data-en="ESG/SDG Reporting" data-ms="Pelaporan ESG/SDG">ESG/SDG Reporting</span>
                         </div>
                     </div>
-                    <button class="btn-primary">Learn More About Adoption</button>
+                    <button class="btn-primary" data-en="Learn More About Adoption" data-ms="Ketahui Lebih Lanjut Tentang Adopsi">Learn More About Adoption</button>
                 </div>
                 <div class="adopt-visual">
                     <div class="adopt-card">
                         <div class="card-header">
-                            <h3>Your Bamboo Adoption</h3>
+                            <h3 data-en="Your Bamboo Adoption" data-ms="Adopsi Bambu Anda">Your Bamboo Adoption</h3>
                             <span class="card-id">#BA2024-001</span>
                         </div>
                         <div class="card-content">
                             <div class="bamboo-icon">🎋</div>
-                            <p><strong>Location:</strong> UTM Skudai, Malaysia</p>
-                            <p><strong>Growth:</strong> 2.3m tall</p>
-                            <p><strong>CO₂ Offset:</strong> 15.2kg</p>
+                            <p><strong data-en="Location:" data-ms="Lokasi:">Location:</strong> UTM Skudai, Malaysia</p>
+                            <p><strong data-en="Growth:" data-ms="Pertumbuhan:">Growth:</strong> 2.3m tall</p>
+                            <p><strong data-en="CO₂ Offset:" data-ms="Offset CO₂:">CO₂ Offset:</strong> 15.2kg</p>
                             <div class="progress-bar">
                                 <div class="progress-fill" style="width: 75%"></div>
                             </div>
-                            <p class="progress-text">75% Growth Target</p>
+                            <p class="progress-text" data-en="75% Growth Target" data-ms="75% Sasaran Pertumbuhan">75% Growth Target</p>
                         </div>
                     </div>
                 </div>
@@ -367,8 +373,8 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <h2>Ready to Go Digital?</h2>
-                    <p>Transform your networking with sustainable Bamboo NFC Cards. Get in touch to explore our smart business solutions and join the digital revolution.</p>
+                    <h2 data-en="Ready to Go Digital?" data-ms="Bersedia untuk Menjadi Digital?">Ready to Go Digital?</h2>
+                    <p data-en="Transform your networking with sustainable Bamboo NFC Cards. Get in touch to explore our smart business solutions and join the digital revolution." data-ms="Transformasikan rangkaian anda dengan Kad NFC Bambu yang lestari. Hubungi kami untuk meneroka penyelesaian perniagaan pintar kami dan sertai revolusi digital.">Transform your networking with sustainable Bamboo NFC Cards. Get in touch to explore our smart business solutions and join the digital revolution.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -387,18 +393,18 @@
                 <div class="contact-form">
                     <form>
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" placeholder="Your Name" data-placeholder-en="Your Name" data-placeholder-ms="Nama Anda" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" placeholder="Your Email" data-placeholder-en="Your Email" data-placeholder-ms="E-mel Anda" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Company">
+                            <input type="text" placeholder="Company" data-placeholder-en="Company" data-placeholder-ms="Syarikat">
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea placeholder="Your Message" data-placeholder-en="Your Message" data-placeholder-ms="Mesej Anda" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
+                        <button type="submit" class="btn-primary" data-en="Send Message" data-ms="Hantar Mesej">Send Message</button>
                     </form>
                 </div>
             </div>

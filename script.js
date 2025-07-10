@@ -31,6 +31,66 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Language Toggle Functionality
+let currentLanguage = 'en';
+
+const langToggle = document.getElementById('langToggle');
+const currentLangSpan = document.getElementById('currentLang');
+
+// Language toggle event listener
+langToggle.addEventListener('click', () => {
+    currentLanguage = currentLanguage === 'en' ? 'ms' : 'en';
+    updateLanguage();
+    updateCurrentLangDisplay();
+});
+
+// Update language display
+function updateCurrentLangDisplay() {
+    currentLangSpan.textContent = currentLanguage.toUpperCase();
+}
+
+// Update all text content based on selected language
+function updateLanguage() {
+    const elementsWithLangData = document.querySelectorAll('[data-en], [data-ms]');
+    
+    elementsWithLangData.forEach(element => {
+        const englishText = element.getAttribute('data-en');
+        const malayText = element.getAttribute('data-ms');
+        
+        if (currentLanguage === 'en' && englishText) {
+            element.innerHTML = englishText;
+        } else if (currentLanguage === 'ms' && malayText) {
+            element.innerHTML = malayText;
+        }
+    });
+    
+    // Update form placeholders
+    updateFormPlaceholders();
+}
+
+// Update form input placeholders
+function updateFormPlaceholders() {
+    const inputsWithPlaceholders = document.querySelectorAll('[data-placeholder-en], [data-placeholder-ms]');
+    
+    inputsWithPlaceholders.forEach(input => {
+        const englishPlaceholder = input.getAttribute('data-placeholder-en');
+        const malayPlaceholder = input.getAttribute('data-placeholder-ms');
+        
+        if (currentLanguage === 'en' && englishPlaceholder) {
+            input.placeholder = englishPlaceholder;
+        } else if (currentLanguage === 'ms' && malayPlaceholder) {
+            input.placeholder = malayPlaceholder;
+        }
+    });
+}
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', () => {
+    updateCurrentLangDisplay();
+    // Set default language to English
+    updateLanguage();
+});
+
 // Navbar background change on scroll
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
